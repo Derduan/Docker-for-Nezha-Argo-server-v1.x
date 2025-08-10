@@ -29,3 +29,11 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ secrets.DOCKERHUB_USER }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest
+
+      - name: Show pushed image info
+        run: |
+          IMAGE="${{ secrets.DOCKERHUB_USER }}/${{ secrets.DOCKER_IMAGE_NAME }}:latest"
+          echo "✅ Docker image pushed successfully!"
+          echo "🔹 Image name: $IMAGE"
+          echo "🔹 Pull command:"
+          echo "    docker pull $IMAGE"
