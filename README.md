@@ -49,7 +49,7 @@ https://github.com/dsadsadsss/java-wanju.git
 | `API_TOKEN` | 客户端节点设置名字的token | 设置与上面DASH_TOKEN相同的值 | 否|不设置则不支持客户端设置名字 |
 #### docker镜像(默认面板端口80):
 ```
-jian27/nezha-v1:tagname
+jian27/nezha-v1
 ```
 
 建议利用action制作自己的镜像
